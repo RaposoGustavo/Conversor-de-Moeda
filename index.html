@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Moedas</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Conversor de Moeda</h1>
+        <p>Selecione uma moeda para converter</p>
+
+        <div class="input-values">
+            <label for="dolar">Dólar</label>
+            <input type="radio" name="moeda" id="dolar">
+
+            <label for="euro">Euro</label>
+            <input type="radio" name="moeda" id="euro">
+            
+            <input type="button" value="Selecionar" onclick="selecionar()">
+
+            <p><input type="number" name="moeda" id="value"> <input type="button" value="Converter" onclick="converter()"></p>
+            
+        </div>
+        <div id="res"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
